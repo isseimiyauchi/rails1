@@ -17,7 +17,6 @@ ActiveRecord::Schema.define(version: 2021_06_17_043812) do
     t.date "start_at"
     t.date "end_at"
     t.boolean "all_day"
-    t.datetime "update_at"
     t.text "memo"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

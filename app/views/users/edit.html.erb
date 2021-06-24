@@ -1,4 +1,8 @@
+<div class = "main_container">
+<div class = "information">
 <h3>ユーザー編集</h3>
+<%= render partial: 'shared/error', locals: { user: @user } %>
+</div>
  
     <%= form_for @user do |f| %>
         
@@ -27,7 +31,7 @@
          <th><%= f.label :memo ,"スケジュールメモ" %></th>
          <td><%= f.text_area :memo %></td>
         </tr>
-    </form>
+       </table>
 
         <div>
         <ul>
@@ -35,4 +39,5 @@
           <li><%= link_to "ユーザー情報一覧に戻る", :users %></li>
         </ul>
       </div>
-    <% end %>
+      <% end %>
+  </div>
